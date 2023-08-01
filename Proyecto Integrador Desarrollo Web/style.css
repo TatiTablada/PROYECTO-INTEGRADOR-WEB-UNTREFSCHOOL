@@ -1,0 +1,372 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family:'Belanosima', sans-serif;
+    font-size: 55px;
+    color: #181823;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif ;
+    font-size: 25px;
+}
+
+p {
+    font-size: 15px;
+    color: #181823;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about,
+.porque,
+.propuesta,
+.ochentaxciento .noticias {
+    height: 100vh;
+}
+
+/* Empieza menu */
+.menu {
+    display: flex;
+    background-color: #FC7300;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    padding-left: 0px;
+    list-style-type: none;
+    margin-top: 0.2rem;
+    display: flex;
+    align-items:center;
+}
+
+li a{
+    display: block;
+    color: #181823;
+    text-align: center;
+    padding: 4% 5%;
+    text-decoration: none;
+    font-size:medium;
+    font-weight: bold;
+    font-family:'Poppins', sans-serif;
+    margin-top: 5px;
+}
+
+li a:hover {
+    color: #EFF5F5;
+}
+
+.banner {
+    background-image: url(./assets/aula-untref.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    color:#EFF5F5;
+    font-size:xx-large;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.banner h1 {
+    color:#EFF5F5;
+    text-shadow: 1px 1px 2px #181823;
+    font-size: 70px;
+    text-decoration: none;
+} 
+
+/* Termina menu */
+
+.ochentaxciento{
+    padding: 0% 2% 0% 6%;
+}
+
+/* Empieza seccion */
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.porque1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.left img{
+    width: 500px;
+    height: 350px;
+}
+
+.porque img {
+    width: 500px;
+    height: 350px;
+}
+/* Termina seccion */
+
+
+/* Empieza propuesta */
+.container {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.container h3 {
+    background-color: #1F8A70;
+    border-radius: 5px;
+}
+
+
+.card {
+    text-align:center;
+    margin: 10px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+/* Termina propuesta */
+
+
+/* Empieza seccion noticias */
+.ultimate {
+    display: flex;
+    margin: 30px;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+/* Termina seccion noticias */
+
+
+/* Empieza footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #181823;
+}
+
+footer h2 {
+    font-family: 'Belanosima', sans-serif ;
+    color:#EFF5F5;
+    font-size: 40px;
+    text-align: center;
+}
+
+.column1 {
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+
+.column1 a{
+    text-decoration: none;
+    text-align: center;
+    color: #EFF5F5;
+}
+
+.column1 a:hover {
+    color: #00425A;
+}
+
+.column3 a {
+    display: grid;
+    text-decoration: none;
+    font-family:'Poppins', sans-serif ;
+    text-align:center;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: #EFF5F5;
+}
+/* Termina footer */
+
+
+
+@media screen and (min-width: 769px) {
+.links{
+    justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width:500px) {
+    h1,
+    h2 {
+        font-size: 50px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+    
+
+    li a{
+        font-size: 12px;
+        padding: 2% 4%;
+    }
+
+    .nosotros, .porque1{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0;
+    }
+
+
+    .nosotros p, .porque1 p {
+        width: 50ch;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .ultimate {
+        display: grid;
+        width: 70%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .ultimate p {
+        width: 50ch;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* @media screen and (min-width: 320px) {
+    .menu {
+    width: 100%;
+    } 
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li a{
+        font-size: 15px;
+        padding: 4% 4%;
+    }
+
+    h1,
+    h2 {
+        font-size: 25px;
+    } 
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner {
+        width: 100%;
+    
+    }
+
+    .nosotros, .porque1{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1%;
+    }
+
+    .nosotros p, .porque1 p {
+        width: 25ch;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container .card img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .ultimate {
+        display: grid;
+        width: 70%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .ultimate p {
+        width: 25ch;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+    }
+
+
+    .left img{
+        width: 300px;
+        height: 350px;
+    }
+    
+    .porque img {
+        width: 300px;
+        height: 350px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 350px;
+    }
+     
+}*/
+

@@ -1,0 +1,58 @@
+body {
+    background-image: url(./assets/background.jpg);
+}
+
+
+h1 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #181823;
+}
+
+.f-input {
+    border:2px solid #181823;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 22px;
+}
+  
+textarea {
+    height: 250px;
+    line-height: 150%;
+  }
+  
+button {
+    max-width:450px;
+    font-family: 'Poppins', sans-serif; 
+    width: 100%;
+    background: #00425A;
+    border-radius:10px;
+    border:0;
+    cursor:pointer;
+    color:#EFF5F5;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    transition: all 0.3s;
+    font-weight:600; 
+}
+
+button:hover {
+   background:#181823;
+}
+
+form{
+    max-width:450px; 
+    margin:0 auto;
+}
+
+label {
+    font-family: 'Poppins', sans-serif; 
+    color: #181823;
+    font-size: 15px;
+}
